@@ -14,15 +14,16 @@ import {
 } from "@coreui/react";
 import { useSelector } from "react-redux";
 import { useMatch } from "react-router-dom";
-
+import { Link } from "react-router-dom";
 const Header = () => {
-  const useName = useSelector((state) => state.user.nameUserLoginNow);
+  const useName = useSelector((state) => state.user.nameUserLoginNow.username);
   // console.log("useName", useName)
   return (
     <div id="box-header">
       <CNavbar colorScheme="light">
         <CContainer fluid>
           <CNavbarBrand href="#">
+            <Link to="/portfolioUser">
             <img
               src="https://cdn-icons-png.flaticon.com/512/219/219983.png"
               alt=""
@@ -30,6 +31,8 @@ const Header = () => {
               height="34"
               className="d-inline-block align-top mx-2"
             />
+            
+            </Link>
             {useName}
           </CNavbarBrand>
         </CContainer>

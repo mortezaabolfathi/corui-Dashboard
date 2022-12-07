@@ -15,7 +15,7 @@ function App() {
             <Route path="lightMode" element={<LightMode/>}/>
             <Route path="TmpMode" element={<TmpMode/>}/>
         </Route>
-            <Route path="portfolioUser" element={<ProfileUser/>}/>
+            <Route path="/portfolioUser" element={<ProfileUser/>}/>
       </Routes>
     </div>
   );

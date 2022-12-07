@@ -23,7 +23,7 @@ const LightMode = () => {
   //modal handler
     //modal handler
     const [visibleSm, setVisibleSm] = useState(false);
-    const userOnline=useSelector((state)=>state.user.nameUserLoginNow)
+    const userOnline=useSelector((state)=>state.user.nameUserLoginNow.username)
 
   const state = {
     labels,
@@ -63,7 +63,7 @@ const LightMode = () => {
             min="10"
             max="30"
             step="1"
-            label="نمی‌توانید بیشتر از حد مجاز نور را افزایش و یا کاهش دهید"
+            label="نمی‌توانید بیشتر از حد مجاز تعریف شده، نور را افزایش و یا کاهش دهید"
             defaultValue="3"
             id="customRange3"
             onChange={(e) => handelSettingTemp(e)}

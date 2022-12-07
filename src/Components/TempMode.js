@@ -22,7 +22,7 @@ const TmpMode = () => {
 
   //modal handler
   const [visibleSm, setVisibleSm] = useState(false);
-  const userOnline=useSelector((state)=>state.user.nameUserLoginNow)
+  const userOnline=useSelector((state)=>state.user.nameUserLoginNow.username)
 
   const state = {
     labels,
@@ -62,7 +62,7 @@ const TmpMode = () => {
             min="20"
             max="40"
             step="1"
-            label="نمی‌توانید بیشتر از حد مجاز دما را افزایش و یا کاهش دهید"
+            label="نمی‌توانید بیشتر از حد مجاز تعریف شده، دما را افزایش و یا کاهش دهید"
             defaultValue="3"
             id="customRange3"
             onChange={(e) => handelSettingTemp(e)}
@@ -75,6 +75,7 @@ const TmpMode = () => {
         <CModalHeader>
           <CModalTitle>{userOnline}</CModalTitle>
         </CModalHeader>
+
         <CModalBody>  دمای گلخانه را به {rangeTemp} درجه تغییر دادید</CModalBody>
       </CModal>
     </div>
