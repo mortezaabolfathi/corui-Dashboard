@@ -22,7 +22,7 @@ const ProfileUser = () => {
             نام کاربر  : {username}
           </CCardHeader>
 
-          <CCardBody className="d-flex flex-column justify-content-center gap-10 align-item-center ">
+          <CCardBody className="d-flex flex-column justify-content-center gap-10 align-items-center ">
             <CCardTitle>اطلاعات کاربری و تاریخ فعالیت شما</CCardTitle>
 
             <CCardText>
