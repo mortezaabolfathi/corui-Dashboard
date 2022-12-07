@@ -31,7 +31,9 @@ const Sidebar = () => {
         <CSidebarBrand>پنل کنترل وضعیت گلخانه</CSidebarBrand>
 
         <CSidebarNav>
-          <CNavTitle>گلخانه شماره یک</CNavTitle>
+          <Link to="/">
+              <CNavTitle>خروج از پنل کاربری</CNavTitle>
+          </Link>
 
           <CNavItem href="#">
             <CIcon customClassName="nav-icon" icon={cilSpeedometer} />
@@ -44,14 +46,6 @@ const Sidebar = () => {
                 <h5 className="text-danger">مشاهده وضعیت دما</h5>
               </Link>
             </CNavItem>
-            <CNavItem className="item-select-navbar-tmp mt-4">
-              <CIcon customClassName="nav-icon" icon={cilPuzzle} />
-              <h5 className="text-danger" type="button">افزایش دما</h5>
-            </CNavItem>
-            <CNavItem className="item-select-navbar-tmp mt-2">
-              <CIcon customClassName="nav-icon" icon={cilPuzzle} />
-              <h5 className="text-center text-success" type="button">کاهش دما</h5>
-            </CNavItem>
           </CNavGroup>
 
           <CNavGroup toggler="تنظیم نور گلخانه">
@@ -59,14 +53,6 @@ const Sidebar = () => {
               <Link to="/dashboard/lightMode">
                 <h5 className="text-danger">مشاهده وضعیت نور</h5>
               </Link>
-            </CNavItem>
-            <CNavItem  className="item-select-navbar-tmp mt-4">
-              <CIcon customClassName="nav-icon" icon={cilPuzzle} />
-              <h5 className="text-danger" type="button">افزایش نور</h5>
-            </CNavItem>
-            <CNavItem className="item-select-navbar-tmp mt-2">
-              <CIcon customClassName="nav-icon" icon={cilPuzzle} />
-              <h5 className="text-center text-success" type="button">کاهش نور</h5>
             </CNavItem>
           </CNavGroup>
         </CSidebarNav>

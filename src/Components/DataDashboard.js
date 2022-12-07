@@ -3,11 +3,11 @@ import {Line } from 'react-chartjs-2';
 import { Chart as ChartJS } from "chart.js/auto";
 import { useSelector } from "react-redux";
 
-
 const DataDashboard = () => {
     // const random = () => Math.round(Math.random() * 100);
-    const labels = useSelector((state)=> state.temperature.labels)
-    const datasets = useSelector((state) => state.temperature.datasets)
+   
+    const labels = useSelector((state)=> state.tempLight.labels)
+    const datasets = useSelector((state) => state.tempLight.datasets)
 
     const state = {
         labels,

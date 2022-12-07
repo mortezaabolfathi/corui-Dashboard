@@ -12,26 +12,28 @@ import {
   CContainer,
   CNavbarBrand,
 } from "@coreui/react";
-import {} from "@coreui/icons";
-import CIcon from "@coreui/icons-react";
+import { useSelector } from "react-redux";
+import { useMatch } from "react-router-dom";
 
 const Header = () => {
+  const useName = useSelector((state) => state.user.nameUserLoginNow);
+  // console.log("useName", useName)
   return (
     <div id="box-header">
-    <CNavbar colorScheme="light" className="bg-light">
-      <CContainer fluid>
-        <CNavbarBrand href="#">
-          <img
-            src=""
-            alt=""
-            width="22"
-            height="24"
-            className="d-inline-block align-top"
-          />
-          نام و نام خانوادگی
-        </CNavbarBrand>
-      </CContainer>
-    </CNavbar>
+      <CNavbar colorScheme="light">
+        <CContainer fluid>
+          <CNavbarBrand href="#">
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/219/219983.png"
+              alt=""
+              width="34"
+              height="34"
+              className="d-inline-block align-top mx-2"
+            />
+            {useName}
+          </CNavbarBrand>
+        </CContainer>
+      </CNavbar>
     </div>
   );
 };

@@ -37,3 +37,16 @@ span.input-group-text {
     // display: flex;
     // align-items: center;
 }
+
+.box-setting-temp{
+    padding: 0px 20px 0px 20px;
+}
+.box-direction a {
+    color: black;
+}
+.box-direction {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 10px;
+}

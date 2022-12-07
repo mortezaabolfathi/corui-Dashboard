@@ -1,9 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
 import  temperatureSlice  from './redux/dataTemp'
+import userData  from './redux/dataUser'
 
 
 export const store = configureStore({
   reducer: {
-    temperature: temperatureSlice
+    tempLight: temperatureSlice,
+    user:userData
   },
 })

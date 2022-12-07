@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        <Route path="/" element={<Login />} />
+        <Route path="/" index  element={<Login/>} />
         <Route path="/dashboard" element={<HomeLayout/>}>
             <Route path="dataDashboard" element={<DataDashboard/>}/>
             <Route path="lightMode" element={<LightMode/>}/>

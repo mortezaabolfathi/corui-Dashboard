@@ -3,7 +3,6 @@ import { Outlet } from "react-router-dom";
 import Header from "../Components/header/Header";
 import Sidebar from "../Components/sidebar/Sidebar";
 import { CCol, CRow, CContainer } from "@coreui/react";
-import Direction from "../Components/Direction";
 
 const DefaultLayOut = () => {
   return (
@@ -21,9 +20,6 @@ const DefaultLayOut = () => {
         </CCol>
 
         <CCol className="" sm={8}>
-          <div className="box-direction d-flex align-items-center bg-secondary opacity-75">
-          <Direction/>
-          </div>
           <Outlet/>
         </CCol>
 
